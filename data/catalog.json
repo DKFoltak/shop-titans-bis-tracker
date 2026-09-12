@@ -1,0 +1,304 @@
+{
+  "resources": [
+    "Iron",
+    "Wood",
+    "Leather",
+    "Herbs",
+    "Extra",
+    "Steel",
+    "Ironwood",
+    "Fabric",
+    "Oils",
+    "Jewels",
+    "Ether",
+    "Essence",
+    "Dragon'S Hoard",
+    "Stardust"
+  ],
+  "quest_components": [
+    "Rusted Tassets",
+    "Bronze Fang",
+    "Boreal Gale",
+    "Xzyur Claw",
+    "Iron Pine Cone",
+    "Precious Gem",
+    "Astral Fabric",
+    "Golden Chunk",
+    "Paramount Gem",
+    "Deep Pearl",
+    "Rustwyrm Scale",
+    "Star Metal",
+    "Silver Dust",
+    "Evil Eye",
+    "Spooky Ectoplasm",
+    "Silk Scarab",
+    "Dinosaur Leather",
+    "Kingtoplasm",
+    "Raw Obsidian",
+    "Moon Crystal",
+    "Living Root",
+    "Marble Pillar",
+    "Ancient Marble",
+    "Crush Claw",
+    "Deep Coral",
+    "Faded Cowl",
+    "Broken Torc",
+    "Precious Shell",
+    "Outsider's Claw",
+    "Alien Bulb",
+    "Divine Spark",
+    "Xzyur Eye",
+    "Rusted Katana",
+    "Wing Nexus",
+    "Zirconia Eggshell",
+    "White Sand",
+    "Glow Shroom",
+    "Webbed Wing",
+    "Chunk of Boots",
+    "Elven Wood",
+    "All-Seeing Eye",
+    "Hybridized Vine",
+    "Ruined Mace",
+    "Demigod Pinion",
+    "Full Moon Crystal",
+    "Spent Knowledge",
+    "Star Metal Ingot",
+    "Ancient Amber",
+    "Crystal Lullaby",
+    "Ghastly Pennant",
+    "Chronos Crystal",
+    "Magma Core",
+    "Opulent Jewel",
+    "Mysterious Fossil",
+    "Rusted Pickaxe",
+    "Precious Pearl",
+    "Thread of Fate",
+    "Man-goroots",
+    "Grim Talon",
+    "Deterioriated Book",
+    "Rusted Cannon",
+    "Platinum Bangles",
+    "Tattered Binder",
+    "Heaven's Crest",
+    "Overgrown Vine",
+    "Elder Wood"
+  ],
+  "fusion_components": [
+    "Sigil of True Grace",
+    "Sigil of True Might",
+    "Sigil of Spark",
+    "Sigil of Grace",
+    "Sigil of True Spark",
+    "Sigil of Might"
+  ],
+  "components": [
+    "Rusted Tassets",
+    "Bronze Fang",
+    "Boreal Gale",
+    "Xzyur Claw",
+    "Iron Pine Cone",
+    "Precious Gem",
+    "Astral Fabric",
+    "Golden Chunk",
+    "Paramount Gem",
+    "Deep Pearl",
+    "Rustwyrm Scale",
+    "Star Metal",
+    "Silver Dust",
+    "Evil Eye",
+    "Spooky Ectoplasm",
+    "Silk Scarab",
+    "Dinosaur Leather",
+    "Kingtoplasm",
+    "Raw Obsidian",
+    "Moon Crystal",
+    "Living Root",
+    "Marble Pillar",
+    "Ancient Marble",
+    "Crush Claw",
+    "Deep Coral",
+    "Faded Cowl",
+    "Broken Torc",
+    "Precious Shell",
+    "Outsider's Claw",
+    "Alien Bulb",
+    "Divine Spark",
+    "Xzyur Eye",
+    "Rusted Katana",
+    "Wing Nexus",
+    "Zirconia Eggshell",
+    "White Sand",
+    "Glow Shroom",
+    "Webbed Wing",
+    "Chunk of Boots",
+    "Elven Wood",
+    "All-Seeing Eye",
+    "Hybridized Vine",
+    "Ruined Mace",
+    "Demigod Pinion",
+    "Full Moon Crystal",
+    "Spent Knowledge",
+    "Star Metal Ingot",
+    "Ancient Amber",
+    "Crystal Lullaby",
+    "Ghastly Pennant",
+    "Chronos Crystal",
+    "Magma Core",
+    "Opulent Jewel",
+    "Mysterious Fossil",
+    "Rusted Pickaxe",
+    "Precious Pearl",
+    "Thread of Fate",
+    "Man-goroots",
+    "Grim Talon",
+    "Deterioriated Book",
+    "Rusted Cannon",
+    "Platinum Bangles",
+    "Tattered Binder",
+    "Heaven's Crest",
+    "Overgrown Vine",
+    "Elder Wood",
+    "Sigil of True Grace",
+    "Sigil of True Might",
+    "Sigil of Spark",
+    "Sigil of Grace",
+    "Sigil of True Spark",
+    "Sigil of Might"
+  ],
+  "heroes": {
+    "Barbarian": {
+      "aliases": [
+        "Barbarian",
+        "Chieftain"
+      ]
+    },
+    "Berserker": {
+      "aliases": [
+        "Berserker",
+        "Jarl"
+      ]
+    },
+    "Chronomancer": {
+      "aliases": [
+        "Chronomancer",
+        "Fateweaver"
+      ]
+    },
+    "Cleric": {
+      "aliases": [
+        "Cleric",
+        "Bishop"
+      ]
+    },
+    "Dancer": {
+      "aliases": [
+        "Dancer",
+        "Acrobat"
+      ]
+    },
+    "Dark Knight": {
+      "aliases": [
+        "Dark Knight",
+        "Death Knight"
+      ]
+    },
+    "Druid": {
+      "aliases": [
+        "Druid",
+        "Arch Druid"
+      ]
+    },
+    "Geomancer": {
+      "aliases": [
+        "Geomancer",
+        "Astramancer"
+      ]
+    },
+    "Knight": {
+      "aliases": [
+        "Knight",
+        "Lord"
+      ]
+    },
+    "Mage": {
+      "aliases": [
+        "Mage",
+        "Archmage"
+      ]
+    },
+    "Monk": {
+      "aliases": [
+        "Monk",
+        "Grandmaster"
+      ]
+    },
+    "Musketeer": {
+      "aliases": [
+        "Musketeer",
+        "Conquistador"
+      ]
+    },
+    "Ninja": {
+      "aliases": [
+        "Ninja",
+        "Sensei"
+      ]
+    },
+    "Ranger": {
+      "aliases": [
+        "Ranger",
+        "Warden"
+      ]
+    },
+    "Samurai": {
+      "aliases": [
+        "Samurai",
+        "Daimyo"
+      ]
+    },
+    "Soldier": {
+      "aliases": [
+        "Soldier",
+        "Mercenary"
+      ]
+    },
+    "Sorcerer": {
+      "aliases": [
+        "Sorcerer",
+        "Warlock"
+      ]
+    },
+    "Spellblade": {
+      "aliases": [
+        "Spellblade",
+        "Spellknight"
+      ]
+    },
+    "Thief": {
+      "aliases": [
+        "Thief",
+        "Trickster"
+      ]
+    },
+    "Velite": {
+      "aliases": [
+        "Velite",
+        "Praetorian"
+      ]
+    },
+    "Wanderer": {
+      "aliases": [
+        "Wanderer",
+        "Pathfinder"
+      ]
+    }
+  },
+  "blueprint_count": 1626,
+  "sheets": {
+    "blueprints": "BLUEPRINTS",
+    "heroes": "HEROES",
+    "quest_components": "QUEST COMPONENTS",
+    "resource_bins": "RESOURCE BINS",
+    "full_moon_fusions": "FULL MOON FUSIONS"
+  }
+}

@@ -1,0 +1,102 @@
+name: Update BiS data
+on:
+  workflow_dispatch:
+    inputs:
+      force_deploy:
+        description: 'Deploy GitHub Pages even if docs/ has not changed'
+        required: false
+        type: boolean
+        default: false
+  schedule:
+    - cron: '17 6 * * 1'
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: update-bis
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    outputs:
+      repo_changed: ${{ steps.changes.outputs.repo_changed }}
+      docs_changed: ${{ steps.changes.outputs.docs_changed }}
+      should_deploy: ${{ steps.changes.outputs.should_deploy }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Update data and site
+        run: python update.py
+      - name: Tests
+        run: pytest -q
+      - name: Detect changes
+        id: changes
+        shell: bash
+        env:
+          FORCE_DEPLOY: ${{ inputs.force_deploy || false }}
+        run: |
+          # Stage only the files/directories managed by the updater.
+          git add -A -- data assets-cache docs CHANGELOG.md
+
+          if git diff --cached --quiet; then
+            repo_changed=false
+          else
+            repo_changed=true
+          fi
+
+          # Detect specifically whether the published site changed.
+          if git diff --cached --quiet -- docs; then
+            docs_changed=false
+          else
+            docs_changed=true
+          fi
+
+          # Pages is deployed only when docs/ changed,
+          # unless explicitly forced from workflow_dispatch.
+          should_deploy="$docs_changed"
+
+          if [[ "$GITHUB_EVENT_NAME" == "workflow_dispatch" && "$FORCE_DEPLOY" == "true" ]]; then
+            should_deploy=true
+          fi
+
+          echo "repo_changed=$repo_changed" >> "$GITHUB_OUTPUT"
+          echo "docs_changed=$docs_changed" >> "$GITHUB_OUTPUT"
+          echo "should_deploy=$should_deploy" >> "$GITHUB_OUTPUT"
+
+          echo "Repository changed: $repo_changed"
+          echo "docs/ changed:       $docs_changed"
+          echo "Deploy Pages:        $should_deploy"
+
+      - name: Commit changes
+        if: steps.changes.outputs.repo_changed == 'true'
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore(data): update Shop Titans BiS snapshot"
+          git push
+      - name: Configure Pages
+        if: steps.changes.outputs.should_deploy == 'true'
+        uses: actions/configure-pages@v6
+      - name: Upload Pages artifact
+        if: steps.changes.outputs.should_deploy == 'true'
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: docs
+  deploy:
+    needs: update
+    if: needs.update.outputs.should_deploy == 'true'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

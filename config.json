@@ -1,0 +1,17 @@
+{
+  "stcentral_bis_url": "https://stcentral-hub.github.io/tools/bis-heroes/",
+  "stcentral_fallback_url": "https://stcentral-hub.github.io/posts/bis-heroes/",
+  "official_spreadsheet_page": "https://playshoptitans.com/news/shop-titans-data-spreadsheet",
+  "official_spreadsheet_id": "1WLa7X8h3O0-aGKxeAlCL7bnN8-FhGd3t7pz2RCzSg8c",
+  "official_asset_url_template": "https://playshoptitans.com/assets/items/{slug}.png",
+  "strict": true,
+  "minimum_items": 20,
+  "request_timeout_seconds": 30,
+  "official_sheets": {
+    "blueprints": "BLUEPRINTS",
+    "heroes": "HEROES",
+    "quest_components": "QUEST COMPONENTS",
+    "resource_bins": "RESOURCE BINS",
+    "full_moon_fusions": "FULL MOON FUSIONS"
+  }
+}

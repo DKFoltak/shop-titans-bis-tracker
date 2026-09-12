@@ -1,0 +1,674 @@
+[
+  {
+    "name": "All-Knowing Cone",
+    "tier": 16,
+    "heroes": [
+      "Chronomancer",
+      "Cleric",
+      "Mage"
+    ],
+    "hero_labels": [
+      "Chronomancer / Fateweaver",
+      "Cleric / Bishop",
+      "Mage / Archmage"
+    ]
+  },
+  {
+    "name": "Avatar of Magic",
+    "tier": 15,
+    "heroes": [
+      "Barbarian",
+      "Berserker",
+      "Chronomancer",
+      "Cleric",
+      "Dancer",
+      "Dark Knight",
+      "Mage",
+      "Monk",
+      "Spellblade"
+    ],
+    "hero_labels": [
+      "Barbarian / Chieftain",
+      "Berserker / Jarl",
+      "Chronomancer / Fateweaver",
+      "Cleric / Bishop",
+      "Dancer / Acrobat",
+      "Dark Knight / Death Knight",
+      "Mage / Archmage",
+      "Monk / Grandmaster",
+      "Spellblade / Spellknight"
+    ]
+  },
+  {
+    "name": "BIT.Runner Armor",
+    "tier": 15,
+    "heroes": [
+      "Berserker",
+      "Dark Knight",
+      "Knight",
+      "Ranger",
+      "Samurai",
+      "Soldier"
+    ],
+    "hero_labels": [
+      "Berserker / Jarl",
+      "Dark Knight / Death Knight",
+      "Knight / Lord",
+      "Ranger / Warden",
+      "Samurai / Daimyo",
+      "Soldier / Mercenary"
+    ]
+  },
+  {
+    "name": "Banana Royale",
+    "tier": 15,
+    "heroes": [
+      "Ninja",
+      "Samurai"
+    ],
+    "hero_labels": [
+      "Ninja / Sensei",
+      "Samurai / Daimyo"
+    ]
+  },
+  {
+    "name": "Blackthorn Scepter",
+    "tier": 16,
+    "heroes": [
+      "Mage"
+    ],
+    "hero_labels": [
+      "Mage / Archmage"
+    ]
+  },
+  {
+    "name": "Bubbling Cauldron",
+    "tier": 15,
+    "heroes": [
+      "Musketeer",
+      "Samurai",
+      "Soldier"
+    ],
+    "hero_labels": [
+      "Musketeer / Conquistador",
+      "Samurai / Daimyo",
+      "Soldier / Mercenary"
+    ]
+  },
+  {
+    "name": "Cardboard Guard",
+    "tier": 15,
+    "heroes": [
+      "Knight",
+      "Soldier",
+      "Velite"
+    ],
+    "hero_labels": [
+      "Knight / Lord",
+      "Soldier / Mercenary",
+      "Velite / Praetorian"
+    ]
+  },
+  {
+    "name": "Clovered Gambeson",
+    "tier": 16,
+    "heroes": [
+      "Dancer",
+      "Musketeer",
+      "Ninja",
+      "Spellblade",
+      "Thief",
+      "Velite",
+      "Wanderer"
+    ],
+    "hero_labels": [
+      "Dancer / Acrobat",
+      "Musketeer / Conquistador",
+      "Ninja / Sensei",
+      "Spellblade / Spellknight",
+      "Thief / Trickster",
+      "Velite / Praetorian",
+      "Wanderer / Pathfinder"
+    ]
+  },
+  {
+    "name": "Crushtacean Pincers",
+    "tier": 15,
+    "heroes": [
+      "Berserker"
+    ],
+    "hero_labels": [
+      "Berserker / Jarl"
+    ]
+  },
+  {
+    "name": "Darkensmog",
+    "tier": 15,
+    "heroes": [
+      "Geomancer"
+    ],
+    "hero_labels": [
+      "Geomancer / Astramancer"
+    ]
+  },
+  {
+    "name": "Divine Contained",
+    "tier": 14,
+    "heroes": [
+      "Berserker",
+      "Ranger"
+    ],
+    "hero_labels": [
+      "Berserker / Jarl",
+      "Ranger / Warden"
+    ]
+  },
+  {
+    "name": "Eclipsed Wand",
+    "tier": 15,
+    "heroes": [
+      "Cleric",
+      "Sorcerer"
+    ],
+    "hero_labels": [
+      "Cleric / Bishop",
+      "Sorcerer / Warlock"
+    ]
+  },
+  {
+    "name": "Elephant Amulet",
+    "tier": 15,
+    "heroes": [
+      "Druid"
+    ],
+    "hero_labels": [
+      "Druid / Arch Druid"
+    ]
+  },
+  {
+    "name": "Enchanted Rose",
+    "tier": 16,
+    "heroes": [
+      "Druid"
+    ],
+    "hero_labels": [
+      "Druid / Arch Druid"
+    ]
+  },
+  {
+    "name": "Equine Liuqin",
+    "tier": 15,
+    "heroes": [
+      "Chronomancer",
+      "Dancer",
+      "Druid",
+      "Thief"
+    ],
+    "hero_labels": [
+      "Chronomancer / Fateweaver",
+      "Dancer / Acrobat",
+      "Druid / Arch Druid",
+      "Thief / Trickster"
+    ]
+  },
+  {
+    "name": "Facechanger",
+    "tier": 15,
+    "heroes": [
+      "Dancer",
+      "Thief",
+      "Wanderer"
+    ],
+    "hero_labels": [
+      "Dancer / Acrobat",
+      "Thief / Trickster",
+      "Wanderer / Pathfinder"
+    ]
+  },
+  {
+    "name": "Fell Spectator",
+    "tier": 16,
+    "heroes": [
+      "Musketeer"
+    ],
+    "hero_labels": [
+      "Musketeer / Conquistador"
+    ]
+  },
+  {
+    "name": "Fragment of Apocal",
+    "tier": 16,
+    "heroes": [
+      "Spellblade"
+    ],
+    "hero_labels": [
+      "Spellblade / Spellknight"
+    ]
+  },
+  {
+    "name": "Gemmed Footpaws",
+    "tier": 16,
+    "heroes": [
+      "Dancer",
+      "Ninja",
+      "Thief",
+      "Velite"
+    ],
+    "hero_labels": [
+      "Dancer / Acrobat",
+      "Ninja / Sensei",
+      "Thief / Trickster",
+      "Velite / Praetorian"
+    ]
+  },
+  {
+    "name": "Ghost Trap",
+    "tier": 15,
+    "heroes": [
+      "Chronomancer",
+      "Cleric",
+      "Druid",
+      "Geomancer",
+      "Mage",
+      "Sorcerer",
+      "Spellblade"
+    ],
+    "hero_labels": [
+      "Chronomancer / Fateweaver",
+      "Cleric / Bishop",
+      "Druid / Arch Druid",
+      "Geomancer / Astramancer",
+      "Mage / Archmage",
+      "Sorcerer / Warlock",
+      "Spellblade / Spellknight"
+    ]
+  },
+  {
+    "name": "Hermes' Hat",
+    "tier": 16,
+    "heroes": [
+      "Dancer",
+      "Ninja",
+      "Thief",
+      "Velite",
+      "Wanderer"
+    ],
+    "hero_labels": [
+      "Dancer / Acrobat",
+      "Ninja / Sensei",
+      "Thief / Trickster",
+      "Velite / Praetorian",
+      "Wanderer / Pathfinder"
+    ]
+  },
+  {
+    "name": "Kiku-Ichimonji",
+    "tier": 14,
+    "heroes": [
+      "Samurai"
+    ],
+    "hero_labels": [
+      "Samurai / Daimyo"
+    ]
+  },
+  {
+    "name": "Krampus Cookies",
+    "tier": 15,
+    "heroes": [
+      "Geomancer",
+      "Sorcerer"
+    ],
+    "hero_labels": [
+      "Geomancer / Astramancer",
+      "Sorcerer / Warlock"
+    ]
+  },
+  {
+    "name": "Lilu's Secret Hat",
+    "tier": 14,
+    "heroes": [
+      "Geomancer"
+    ],
+    "hero_labels": [
+      "Geomancer / Astramancer"
+    ]
+  },
+  {
+    "name": "Malady's Robe",
+    "tier": 15,
+    "heroes": [
+      "Chronomancer",
+      "Cleric",
+      "Druid",
+      "Mage",
+      "Monk",
+      "Sorcerer"
+    ],
+    "hero_labels": [
+      "Chronomancer / Fateweaver",
+      "Cleric / Bishop",
+      "Druid / Arch Druid",
+      "Mage / Archmage",
+      "Monk / Grandmaster",
+      "Sorcerer / Warlock"
+    ]
+  },
+  {
+    "name": "Mantle of Splendor",
+    "tier": 16,
+    "heroes": [
+      "Thief",
+      "Wanderer"
+    ],
+    "hero_labels": [
+      "Thief / Trickster",
+      "Wanderer / Pathfinder"
+    ]
+  },
+  {
+    "name": "Obsidian Lava Cake",
+    "tier": 15,
+    "heroes": [
+      "Wanderer"
+    ],
+    "hero_labels": [
+      "Wanderer / Pathfinder"
+    ]
+  },
+  {
+    "name": "Poisoned Apple Pie",
+    "tier": 16,
+    "heroes": [
+      "Monk"
+    ],
+    "hero_labels": [
+      "Monk / Grandmaster"
+    ]
+  },
+  {
+    "name": "Poseidon's Might",
+    "tier": 16,
+    "heroes": [
+      "Knight"
+    ],
+    "hero_labels": [
+      "Knight / Lord"
+    ]
+  },
+  {
+    "name": "Precursor's Ultimatum",
+    "tier": 16,
+    "heroes": [
+      "Spellblade"
+    ],
+    "hero_labels": [
+      "Spellblade / Spellknight"
+    ]
+  },
+  {
+    "name": "Pure Heart Gloves",
+    "tier": 13,
+    "heroes": [
+      "Dancer",
+      "Ninja"
+    ],
+    "hero_labels": [
+      "Dancer / Acrobat",
+      "Ninja / Sensei"
+    ]
+  },
+  {
+    "name": "Pyroclastic Crown",
+    "tier": 15,
+    "heroes": [
+      "Spellblade"
+    ],
+    "hero_labels": [
+      "Spellblade / Spellknight"
+    ]
+  },
+  {
+    "name": "Ring of Midas",
+    "tier": 15,
+    "heroes": [
+      "Ninja",
+      "Thief"
+    ],
+    "hero_labels": [
+      "Ninja / Sensei",
+      "Thief / Trickster"
+    ]
+  },
+  {
+    "name": "Rock Stompers",
+    "tier": 14,
+    "heroes": [
+      "Barbarian",
+      "Dark Knight",
+      "Knight",
+      "Samurai",
+      "Soldier",
+      "Spellblade"
+    ],
+    "hero_labels": [
+      "Barbarian / Chieftain",
+      "Dark Knight / Death Knight",
+      "Knight / Lord",
+      "Samurai / Daimyo",
+      "Soldier / Mercenary",
+      "Spellblade / Spellknight"
+    ]
+  },
+  {
+    "name": "Sia's Royal Mantle",
+    "tier": 15,
+    "heroes": [
+      "Barbarian",
+      "Ranger"
+    ],
+    "hero_labels": [
+      "Barbarian / Chieftain",
+      "Ranger / Warden"
+    ]
+  },
+  {
+    "name": "Slathered Slippers",
+    "tier": 15,
+    "heroes": [
+      "Wanderer"
+    ],
+    "hero_labels": [
+      "Wanderer / Pathfinder"
+    ]
+  },
+  {
+    "name": "Teddy Bear Feet",
+    "tier": 15,
+    "heroes": [
+      "Berserker",
+      "Musketeer",
+      "Samurai"
+    ],
+    "hero_labels": [
+      "Berserker / Jarl",
+      "Musketeer / Conquistador",
+      "Samurai / Daimyo"
+    ]
+  },
+  {
+    "name": "Teddy Bear Head",
+    "tier": 15,
+    "heroes": [
+      "Barbarian",
+      "Berserker",
+      "Dark Knight",
+      "Knight",
+      "Ranger",
+      "Samurai"
+    ],
+    "hero_labels": [
+      "Barbarian / Chieftain",
+      "Berserker / Jarl",
+      "Dark Knight / Death Knight",
+      "Knight / Lord",
+      "Ranger / Warden",
+      "Samurai / Daimyo"
+    ]
+  },
+  {
+    "name": "Titan Admiral Arms",
+    "tier": 15,
+    "heroes": [
+      "Barbarian",
+      "Chronomancer",
+      "Dancer",
+      "Dark Knight",
+      "Knight",
+      "Musketeer",
+      "Ninja",
+      "Samurai",
+      "Soldier",
+      "Spellblade",
+      "Thief",
+      "Wanderer"
+    ],
+    "hero_labels": [
+      "Barbarian / Chieftain",
+      "Chronomancer / Fateweaver",
+      "Dancer / Acrobat",
+      "Dark Knight / Death Knight",
+      "Knight / Lord",
+      "Musketeer / Conquistador",
+      "Ninja / Sensei",
+      "Samurai / Daimyo",
+      "Soldier / Mercenary",
+      "Spellblade / Spellknight",
+      "Thief / Trickster",
+      "Wanderer / Pathfinder"
+    ]
+  },
+  {
+    "name": "Titan Admiral Boots",
+    "tier": 15,
+    "heroes": [
+      "Chronomancer",
+      "Cleric",
+      "Mage",
+      "Sorcerer"
+    ],
+    "hero_labels": [
+      "Chronomancer / Fateweaver",
+      "Cleric / Bishop",
+      "Mage / Archmage",
+      "Sorcerer / Warlock"
+    ]
+  },
+  {
+    "name": "Titan Admiral Gloves",
+    "tier": 15,
+    "heroes": [
+      "Geomancer",
+      "Musketeer",
+      "Ninja",
+      "Velite"
+    ],
+    "hero_labels": [
+      "Geomancer / Astramancer",
+      "Musketeer / Conquistador",
+      "Ninja / Sensei",
+      "Velite / Praetorian"
+    ]
+  },
+  {
+    "name": "Titan Gauntlets",
+    "tier": 14,
+    "heroes": [
+      "Ranger",
+      "Samurai"
+    ],
+    "hero_labels": [
+      "Ranger / Warden",
+      "Samurai / Daimyo"
+    ]
+  },
+  {
+    "name": "Torc of Peace",
+    "tier": 14,
+    "heroes": [
+      "Monk",
+      "Velite"
+    ],
+    "hero_labels": [
+      "Monk / Grandmaster",
+      "Velite / Praetorian"
+    ]
+  },
+  {
+    "name": "Unbroken Signet",
+    "tier": 15,
+    "heroes": [
+      "Monk"
+    ],
+    "hero_labels": [
+      "Monk / Grandmaster"
+    ]
+  },
+  {
+    "name": "Water Gun",
+    "tier": 16,
+    "heroes": [
+      "Musketeer",
+      "Ranger",
+      "Wanderer"
+    ],
+    "hero_labels": [
+      "Musketeer / Conquistador",
+      "Ranger / Warden",
+      "Wanderer / Pathfinder"
+    ]
+  },
+  {
+    "name": "Wave Abbot Gi",
+    "tier": 14,
+    "heroes": [
+      "Geomancer"
+    ],
+    "hero_labels": [
+      "Geomancer / Astramancer"
+    ]
+  },
+  {
+    "name": "Xenotype Forelimbs",
+    "tier": 15,
+    "heroes": [
+      "Barbarian",
+      "Berserker",
+      "Knight",
+      "Ranger",
+      "Samurai",
+      "Soldier"
+    ],
+    "hero_labels": [
+      "Barbarian / Chieftain",
+      "Berserker / Jarl",
+      "Knight / Lord",
+      "Ranger / Warden",
+      "Samurai / Daimyo",
+      "Soldier / Mercenary"
+    ]
+  },
+  {
+    "name": "Zeus' Thunderbolts",
+    "tier": 16,
+    "heroes": [
+      "Musketeer",
+      "Ninja",
+      "Samurai"
+    ],
+    "hero_labels": [
+      "Musketeer / Conquistador",
+      "Ninja / Sensei",
+      "Samurai / Daimyo"
+    ]
+  }
+]
