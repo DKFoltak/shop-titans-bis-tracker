@@ -1,3 +1,5 @@
+import csv
+import io
 import textwrap
 
 import pytest
@@ -13,12 +15,23 @@ CFG = {
         'heroes': 'HEROES',
         'quest_components': 'QUEST COMPONENTS',
         'resource_bins': 'RESOURCE BINS',
+        'full_moon_fusions': 'FULL MOON FUSIONS',
     },
 }
 
 
 def _csv(text: str) -> str:
     return textwrap.dedent(text).strip() + '\n'
+
+
+def _heroes_csv(*pairs: tuple[str, str]) -> str:
+    out = io.StringIO()
+    writer = csv.writer(out, lineterminator='\n')
+    writer.writerow(['FIGHTER CLASSES'])
+    for base, promotion in pairs:
+        writer.writerow([base.upper()])
+        writer.writerow([f'{promotion.upper()}({base.title()} Class Promotion)'])
+    return out.getvalue()
 
 
 def _catalog():
@@ -29,12 +42,11 @@ def _catalog():
             Blaze Element,Enchantment,12,Steel,20,,,,Raw Obsidian,3,Normal,,
             Test Hat,Hat,14,Steel,10,,,,Raw Obsidian,2,Superior,,
         '''),
-        'HEROES': _csv('''
-            Class,Promoted Class,Preferred Weapon
-            Knight,Lord,Axe
-            Ranger,Warden,Bow
-            Berserker,Jarl,Mace
-        '''),
+        'HEROES': _heroes_csv(
+            ('Knight', 'Lord'),
+            ('Ranger', 'Warden'),
+            ('Berserker', 'Jarl'),
+        ),
         'QUEST COMPONENTS': _csv('''
             Component,Quest
             Ancient Amber,Forest
@@ -74,10 +86,7 @@ def test_resource_collection_is_data_driven_not_hardcoded():
             Lunar Test,Hat,20,Moon Dust,123,Ancient Amber,2
             Other Test,Hat,19,Moon Dust,50,Ancient Amber,1
         '''),
-        'HEROES': _csv('''
-            Class,Promoted Class
-            Knight,Lord
-        '''),
+        'HEROES': _heroes_csv(('Knight', 'Lord')),
         'QUEST COMPONENTS': _csv('''
             Component
             Ancient Amber
@@ -100,10 +109,7 @@ def test_resource_must_be_validated_by_resource_bins():
             Lunar Test,Hat,20,Moon Dust,123,Ancient Amber,2
             Other Test,Hat,19,Moon Dust,50,Ancient Amber,1
         '''),
-        'HEROES': _csv('''
-            Class,Promoted Class
-            Knight,Lord
-        '''),
+        'HEROES': _heroes_csv(('Knight', 'Lord')),
         'QUEST COMPONENTS': _csv('''
             Component
             Ancient Amber
@@ -153,10 +159,7 @@ def test_unknown_component_aborts_instead_of_becoming_a_filter_value():
             Bad Item,Hat,15,Iron,10,Quality Chance,1,---
             Other Item,Hat,14,Iron,5,Ancient Amber,2,---
         '''),
-        'HEROES': _csv('''
-            Class,Promoted Class
-            Knight,Lord
-        '''),
+        'HEROES': _heroes_csv(('Knight', 'Lord')),
         'QUEST COMPONENTS': _csv('''
             Component
             Ancient Amber
@@ -180,10 +183,7 @@ def test_live_sheet_style_icon_only_resource_columns_are_mapped_from_resource_bi
             Alpha Blade,Sword,15,Blacksmith,30,100,20,10,5,,,Ancient Amber,---,4
             Beta Blade,Sword,14,Blacksmith,29,80,15,8,3,,,Ancient Amber,---,2
         '''),
-        'HEROES': _csv('''
-            Class,Promoted Class
-            Knight,Lord
-        '''),
+        'HEROES': _heroes_csv(('Knight', 'Lord')),
         'QUEST COMPONENTS': _csv('''
             Component
             Ancient Amber
@@ -218,10 +218,7 @@ def test_resource_display_spelling_is_recovered_from_blueprint_spent_text():
             Herb Test,Potion,10,Herbalist,20,200,30,Ancient Amber,---,2,-40 Herbs Spent,-6 Jewels Spent
             Herb Test 2,Potion,9,Herbalist,19,150,25,Ancient Amber,---,1,-30 Herbs Spent,-5 Jewels Spent
         '''),
-        'HEROES': _csv('''
-            Class,Promoted Class
-            Druid,Arch Druid
-        '''),
+        'HEROES': _heroes_csv(('Druid', 'Arch Druid')),
         'QUEST COMPONENTS': _csv('''
             Component
             Ancient Amber
@@ -286,10 +283,7 @@ def test_resource_bins_can_contain_resources_without_direct_blueprint_cost_colum
 
     sheets = {
         'BLUEPRINTS': emit([headers, row1, row2]),
-        'HEROES': _csv('''
-            Class,Promoted Class
-            Knight,Lord
-        '''),
+        'HEROES': _heroes_csv(('Knight', 'Lord')),
         'QUEST COMPONENTS': _csv('''
             Component
             Ancient Amber
@@ -307,17 +301,15 @@ def test_resource_bins_can_contain_resources_without_direct_blueprint_cost_colum
     assert 'Unused Beta' not in catalog.blueprints['Alpha'].resources
 
 
-def test_live_heroes_parallel_card_layout_is_parsed_without_class_column():
-    import csv as _csv_module
-    import io as _io
-
+def test_heroes_use_only_classes_columns_and_explicit_promotion_relations():
     def emit(rows):
-        buf = _io.StringIO()
-        w = _csv_module.writer(buf, lineterminator='\n')
-        w.writerows(rows)
+        buf = io.StringIO()
+        writer = csv.writer(buf, lineterminator='\n')
+        writer.writerows(rows)
         return buf.getvalue()
 
     width = 25
+
     def row(*pairs):
         values = [''] * width
         for col, value in pairs:
@@ -330,69 +322,19 @@ def test_live_heroes_parallel_card_layout_is_parsed_without_class_column():
             (9, "ROGUE CLASSES Hero stats listed take into account the hero's innate skill, where applicable."),
             (17, "SPELLCASTER CLASSES Hero stats listed take into account the hero's innate skill, where applicable."),
         ),
-        row((0, 'SOLDIER'), (1, 'ELEMENT'), (8, 'THIEF'), (9, 'ELEMENT'), (16, 'MAGE'), (17, 'ELEMENT')),
-        row((0, 'Promotion'), (1, 'Mercenary'), (8, 'Promotion'), (9, 'Trickster'), (16, 'Promotion'), (17, 'Archmage')),
-        row((0, 'KNIGHT'), (1, 'ELEMENT'), (8, 'WANDERER'), (9, 'ELEMENT'), (16, 'DRUID'), (17, 'ELEMENT')),
-        row((0, 'Promotes to: Lord'), (8, 'Promotes to: Pathfinder'), (16, 'Promotes to: Arch Druid')),
-        row((0, 'BERSERKER'), (1, 'ELEMENT'), (8, 'NINJA'), (9, 'ELEMENT'), (16, 'SPELLBLADE'), (17, 'ELEMENT')),
-        row((0, 'Titan Soul Promotion'), (1, 'Jarl'), (8, 'Titan Soul Promotion'), (9, 'Sensei'), (16, 'Titan Soul Promotion'), (17, 'Spellknight')),
-    ]
-
-    sheets = {
-        'BLUEPRINTS': _csv('''
-            Name,Type,Tier,Resource 1,Resource 1 Amount,Component,Amount Needed
-            Alpha,Sword,15,Iron,10,Ancient Amber,2
-            Beta,Sword,14,Iron,5,Ancient Amber,1
-        '''),
-        'HEROES': emit(heroes_rows),
-        'QUEST COMPONENTS': _csv('''
-            Component
-            Ancient Amber
-        '''),
-        'RESOURCE BINS': _csv('''
-            IRON BIN
-            Bin Level
-            1
-        '''),
-    }
-
-    catalog = parse_game_catalog(sheets, CFG)
-    assert catalog.resolve_hero('Soldier') == 'Soldier'
-    assert catalog.resolve_hero('Mercenary') == 'Soldier'
-    assert catalog.resolve_hero('Lord') == 'Knight'
-    assert catalog.resolve_hero('Pathfinder') == 'Wanderer'
-    assert catalog.resolve_hero('Jarl') == 'Berserker'
-    assert catalog.resolve_hero('Sensei') == 'Ninja'
-    assert catalog.resolve_hero('Spellknight') == 'Spellblade'
-    assert catalog.resolve_hero('ELEMENT') is None
-    assert set(catalog.heroes) >= {'Soldier', 'Knight', 'Berserker', 'Thief', 'Wanderer', 'Ninja', 'Mage', 'Druid', 'Spellblade'}
-
-
-def test_live_heroes_card_title_may_be_right_of_element_after_csv_merge_flattening():
-    import csv as _csv_module
-    import io as _io
-
-    def emit(rows):
-        buf = _io.StringIO()
-        w = _csv_module.writer(buf, lineterminator='\n')
-        w.writerows(rows)
-        return buf.getvalue()
-
-    width = 24
-    def row(*pairs):
-        values = [''] * width
-        for col, value in pairs:
-            values[col] = value
-        return values
-
-    # Simulate Google CSV flattening a merged visual card so the class title is
-    # emitted to the right of ELEMENT instead of immediately to its left.
-    heroes_rows = [
-        row((0, 'FIGHTER CLASSES'), (8, 'ROGUE CLASSES'), (16, 'SPELLCASTER CLASSES')),
-        row((0, 'ELEMENT'), (2, 'SOLDIER'), (8, 'ELEMENT'), (10, 'THIEF'), (16, 'ELEMENT'), (18, 'MAGE')),
-        row((0, 'Promotion'), (1, 'Mercenary'), (8, 'Promotion'), (9, 'Trickster'), (16, 'Promotion'), (17, 'Archmage')),
-        row((0, 'ELEMENT'), (2, 'KNIGHT'), (8, 'ELEMENT'), (10, 'WANDERER'), (16, 'ELEMENT'), (18, 'DRUID')),
-        row((0, 'Promotes to: Lord'), (8, 'Promotes to: Pathfinder'), (16, 'Promotes to: Arch Druid')),
+        row((1, 'SOLDIER'), (7, 'ELEMENT'), (9, 'THIEF'), (15, 'ELEMENT'), (17, 'MAGE'), (23, 'ELEMENT')),
+        row(
+            (1, 'MERCENARY\n(Soldier Class Promotion)'),
+            (9, 'TRICKSTER\n(Thief Class Promotion)'),
+            (17, 'ARCHMAGE\n(Mage Class Promotion)'),
+        ),
+        row((1, 'KNIGHT'), (9, 'WANDERER'), (17, 'DRUID')),
+        row(
+            (1, 'LORD\n(Knight Class Promotion)'),
+            (9, 'PATHFINDER\n(Wanderer Class Promotion)'),
+            (17, 'ARCH DRUID\n(Druid Class Promotion)'),
+        ),
+        row((0, 'FAKE HERO'), (2, 'OTHER'), (8, 'ALSO FAKE'), (18, 'NOT A CLASS')),
     ]
 
     sheets = {
@@ -420,3 +362,38 @@ def test_live_heroes_card_title_may_be_right_of_element_after_csv_merge_flatteni
     assert catalog.resolve_hero('Trickster') == 'Thief'
     assert catalog.resolve_hero('Pathfinder') == 'Wanderer'
     assert catalog.resolve_hero('Archmage') == 'Mage'
+    assert catalog.resolve_hero('ELEMENT') is None
+    assert catalog.resolve_hero('FAKE HERO') is None
+    assert set(catalog.heroes) == {'Soldier', 'Knight', 'Thief', 'Wanderer', 'Mage', 'Druid'}
+
+
+def test_full_moon_fusions_only_extend_components_with_missing_component_names():
+    sheets = {
+        'BLUEPRINTS': _csv('''
+            Name,Type,Tier,Resource 1,Resource 1 Amount,Component,Amount Needed
+            Alpha,Sword,15,Iron,10,Ancient Amber,2
+            Beta,Sword,14,Iron,5,Sigil of Test,1
+        '''),
+        'HEROES': _heroes_csv(('Knight', 'Lord')),
+        'QUEST COMPONENTS': _csv('''
+            Component
+            Ancient Amber
+        '''),
+        'RESOURCE BINS': _csv('''
+            IRON BIN
+            Bin Level
+            1
+        '''),
+        'FULL MOON FUSIONS': _csv('''
+            Name,Type
+            Ancient Amber,Component
+            Sigil of Test,Component
+            Not A Component,Item
+        '''),
+    }
+
+    catalog = parse_game_catalog(sheets, CFG)
+    assert catalog.quest_components == ('Ancient Amber',)
+    assert catalog.fusion_components == ('Sigil of Test',)
+    assert catalog.components == ('Ancient Amber', 'Sigil of Test')
+    assert catalog.blueprints['Beta'].components == {'Sigil of Test': 1}
