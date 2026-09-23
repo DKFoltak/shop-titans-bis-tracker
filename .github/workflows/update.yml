@@ -34,7 +34,7 @@ jobs:
       - name: Update data and site
         run: python update.py
       - name: Tests
-        run: pytest -q
+        run: python -m pytest -q
       - name: Detect changes
         id: changes
         shell: bash
