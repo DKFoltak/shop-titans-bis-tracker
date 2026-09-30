@@ -18,11 +18,13 @@
     "Elephant Amulet": "jumanji_amulet",
     "Enchanted Rose": "fairytaleherb",
     "Equine Liuqin": "lunarinstrument",
+    "Facechanger": "lunarroguehat",
     "Facechanger's Mask": "lunarroguehat",
     "Fell Spectator": "demonamulet",
     "Fragment of Apocal": "spacestaff",
     "Gemmed Footpaws": "lucky7shoes",
     "Ghost Trap": "gb_scroll",
+    "Hermes' Hat": "greekroguehat",
     "Kiku-Ichimonji": "artifactsword",
     "Krampus Cookies": "krampusdessert",
     "Lilu's Secret Hat": "lilumagehat",
@@ -30,6 +32,7 @@
     "Mantle of Splendor": "lucky7cloak",
     "Obsidian Lava Cake": "firecrabdessert",
     "Poisoned Apple Pie": "fairytaledessert",
+    "Poseidon's Might": "greekspear",
     "Precursor's Ultimatum": "spacescroll",
     "Pure Heart Gloves": "magicalgirlgloves",
     "Pyroclastic Crown": "firecrown",
@@ -46,12 +49,9 @@
     "Titan Gauntlets": "shoprgauntlets",
     "Torc of Peace": "artifactamulet",
     "Unbroken Signet": "porcelainring",
+    "Water Gun": "summergun",
     "Wave Abbot Gi": "monkrobe",
     "Xenotype Forelimbs": "biomechgauntlets",
-    "Water Gun": "summergun",
-    "Zeus' Thunderbolts": "greekquiver",
-    "Facechanger": "lunarroguehat",
-    "Hermes' Hat": "greekroguehat",
-    "Poseidon's Might": "greekspear"
+    "Zeus' Thunderbolts": "greekquiver"
   }
 }

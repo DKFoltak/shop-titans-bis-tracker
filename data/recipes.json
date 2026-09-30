@@ -2,49 +2,49 @@
   "All-Knowing Cone": {
     "tier": 16,
     "resources": {
-      "Fabric": 181,
       "Ether": 49,
+      "Fabric": 181,
       "Stardust": 13
     },
     "components": {
-      "Xzyur Eye": 4,
-      "Paramount Gem": 3
+      "Paramount Gem": 3,
+      "Xzyur Eye": 4
     }
   },
   "Avatar of Magic": {
     "tier": 15,
     "resources": {
-      "Wood": 485,
+      "Essence": 11,
       "Ironwood": 171,
-      "Essence": 11
+      "Wood": 485
     },
     "components": {
       "Ancient Amber": 3,
       "Star Metal Ingot": 4
     }
   },
-  "BIT.Runner Armor": {
-    "tier": 15,
-    "resources": {
-      "Iron": 493,
-      "Steel": 176,
-      "Essence": 12
-    },
-    "components": {
-      "Star Metal Ingot": 4,
-      "Heaven's Crest": 3
-    }
-  },
   "Banana Royale": {
     "tier": 15,
     "resources": {
-      "Wood": 485,
+      "Essence": 11,
       "Jewels": 43,
-      "Essence": 11
+      "Wood": 485
     },
     "components": {
       "Ancient Amber": 4,
       "Kingtoplasm": 3
+    }
+  },
+  "BIT.Runner Armor": {
+    "tier": 15,
+    "resources": {
+      "Essence": 12,
+      "Iron": 493,
+      "Steel": 176
+    },
+    "components": {
+      "Heaven's Crest": 3,
+      "Star Metal Ingot": 4
     }
   },
   "Blackthorn Scepter": {
@@ -62,21 +62,21 @@
   "Bubbling Cauldron": {
     "tier": 15,
     "resources": {
+      "Essence": 11,
       "Herbs": 450,
-      "Oils": 171,
-      "Essence": 11
+      "Oils": 171
     },
     "components": {
-      "Mysterious Fossil": 4,
-      "Man-goroots": 4
+      "Man-goroots": 4,
+      "Mysterious Fossil": 4
     }
   },
   "Cardboard Guard": {
     "tier": 15,
     "resources": {
+      "Essence": 11,
       "Herbs": 480,
-      "Oils": 170,
-      "Essence": 11
+      "Oils": 170
     },
     "components": {
       "Dinosaur Leather": 4,
@@ -86,21 +86,21 @@
   "Clovered Gambeson": {
     "tier": 16,
     "resources": {
-      "Leather": 500,
       "Fabric": 181,
+      "Leather": 500,
       "Stardust": 13
     },
     "components": {
-      "Xzyur Eye": 4,
-      "Wing Nexus": 4
+      "Wing Nexus": 4,
+      "Xzyur Eye": 4
     }
   },
   "Crushtacean Pincers": {
     "tier": 15,
     "resources": {
+      "Essence": 11,
       "Iron": 525,
-      "Steel": 182,
-      "Essence": 11
+      "Steel": 182
     },
     "components": {
       "Ancient Amber": 5,
@@ -110,21 +110,21 @@
   "Darkensmog": {
     "tier": 15,
     "resources": {
-      "Steel": 165,
+      "Essence": 10,
       "Jewels": 60,
-      "Essence": 10
+      "Steel": 165
     },
     "components": {
-      "Star Metal Ingot": 4,
-      "Ancient Amber": 3
+      "Ancient Amber": 3,
+      "Star Metal Ingot": 4
     }
   },
   "Divine Contained": {
     "tier": 14,
     "resources": {
+      "Essence": 6,
       "Herbs": 465,
-      "Jewels": 57,
-      "Essence": 6
+      "Jewels": 57
     },
     "components": {
       "Divine Spark": 6
@@ -133,45 +133,45 @@
   "Eclipsed Wand": {
     "tier": 15,
     "resources": {
-      "Wood": 485,
+      "Essence": 11,
       "Jewels": 62,
-      "Essence": 11
+      "Wood": 485
     },
     "components": {
-      "Mysterious Fossil": 1,
-      "Full Moon Crystal": 5
+      "Full Moon Crystal": 5,
+      "Mysterious Fossil": 1
     }
   },
   "Elephant Amulet": {
     "tier": 15,
     "resources": {
-      "Iron": 369,
+      "Essence": 12,
       "Ether": 63,
-      "Essence": 12
+      "Iron": 369
     },
     "components": {
-      "Mysterious Fossil": 3,
-      "Marble Pillar": 4
+      "Marble Pillar": 4,
+      "Mysterious Fossil": 3
     }
   },
   "Enchanted Rose": {
     "tier": 16,
     "resources": {
-      "Steel": 181,
       "Ether": 49,
-      "Stardust": 13
+      "Stardust": 13,
+      "Steel": 181
     },
     "components": {
-      "Xzyur Claw": 4,
-      "Paramount Gem": 3
+      "Paramount Gem": 3,
+      "Xzyur Claw": 4
     }
   },
   "Equine Liuqin": {
     "tier": 15,
     "resources": {
-      "Wood": 533,
+      "Essence": 12,
       "Ether": 68,
-      "Essence": 12
+      "Wood": 533
     },
     "components": {
       "Ancient Amber": 4,
@@ -181,9 +181,9 @@
   "Facechanger": {
     "tier": 15,
     "resources": {
-      "Leather": 493,
+      "Essence": 12,
       "Fabric": 176,
-      "Essence": 12
+      "Leather": 493
     },
     "components": {
       "Dinosaur Leather": 4,
@@ -193,13 +193,13 @@
   "Fell Spectator": {
     "tier": 16,
     "resources": {
-      "Iron": 375,
       "Ether": 65,
+      "Iron": 375,
       "Stardust": 13
     },
     "components": {
-      "Xzyur Claw": 3,
-      "Wing Nexus": 4
+      "Wing Nexus": 4,
+      "Xzyur Claw": 3
     }
   },
   "Fragment of Apocal": {
@@ -210,28 +210,28 @@
       "Stardust": 13
     },
     "components": {
-      "Xzyur Eye": 4,
-      "Wing Nexus": 4
+      "Wing Nexus": 4,
+      "Xzyur Eye": 4
     }
   },
   "Gemmed Footpaws": {
     "tier": 16,
     "resources": {
-      "Leather": 500,
       "Fabric": 181,
+      "Leather": 500,
       "Stardust": 13
     },
     "components": {
-      "Xzyur Claw": 4,
-      "Wing Nexus": 3
+      "Wing Nexus": 3,
+      "Xzyur Claw": 4
     }
   },
   "Ghost Trap": {
     "tier": 15,
     "resources": {
-      "Steel": 171,
+      "Essence": 12,
       "Jewels": 63,
-      "Essence": 12
+      "Steel": 171
     },
     "components": {
       "Kingtoplasm": 4,
@@ -241,8 +241,8 @@
   "Hermes' Hat": {
     "tier": 16,
     "resources": {
-      "Leather": 500,
       "Fabric": 181,
+      "Leather": 500,
       "Stardust": 13
     },
     "components": {
@@ -253,33 +253,33 @@
   "Kiku-Ichimonji": {
     "tier": 14,
     "resources": {
-      "Iron": 469,
+      "Essence": 9,
       "Ether": 44,
-      "Essence": 9
+      "Iron": 469
     },
     "components": {
-      "Rusted Katana": 1,
-      "Crush Claw": 4
+      "Crush Claw": 4,
+      "Rusted Katana": 1
     }
   },
   "Krampus Cookies": {
     "tier": 15,
     "resources": {
+      "Essence": 11,
       "Herbs": 485,
-      "Oils": 171,
-      "Essence": 11
+      "Oils": 171
     },
     "components": {
-      "Mysterious Fossil": 3,
-      "Man-goroots": 4
+      "Man-goroots": 4,
+      "Mysterious Fossil": 3
     }
   },
   "Lilu's Secret Hat": {
     "tier": 14,
     "resources": {
+      "Essence": 9,
       "Fabric": 150,
-      "Jewels": 60,
-      "Essence": 9
+      "Jewels": 60
     },
     "components": {
       "Divine Spark": 4,
@@ -289,9 +289,9 @@
   "Malady's Robe": {
     "tier": 15,
     "resources": {
+      "Essence": 11,
       "Fabric": 165,
-      "Jewels": 62,
-      "Essence": 11
+      "Jewels": 62
     },
     "components": {
       "Dinosaur Leather": 4,
@@ -301,8 +301,8 @@
   "Mantle of Splendor": {
     "tier": 16,
     "resources": {
-      "Leather": 550,
       "Fabric": 199,
+      "Leather": 550,
       "Stardust": 13
     },
     "components": {
@@ -313,9 +313,9 @@
   "Obsidian Lava Cake": {
     "tier": 15,
     "resources": {
+      "Essence": 11,
       "Herbs": 485,
-      "Oils": 171,
-      "Essence": 11
+      "Oils": 171
     },
     "components": {
       "Ancient Amber": 3,
@@ -337,33 +337,33 @@
   "Poseidon's Might": {
     "tier": 16,
     "resources": {
-      "Ironwood": 181,
       "Ether": 65,
+      "Ironwood": 181,
       "Stardust": 13
     },
     "components": {
-      "Xzyur Claw": 4,
-      "Star Metal Ingot": 4
+      "Star Metal Ingot": 4,
+      "Xzyur Claw": 4
     }
   },
   "Precursor's Ultimatum": {
     "tier": 16,
     "resources": {
-      "Leather": 500,
       "Jewels": 65,
+      "Leather": 500,
       "Stardust": 13
     },
     "components": {
-      "Xzyur Eye": 3,
-      "Hybridized Vine": 5
+      "Hybridized Vine": 5,
+      "Xzyur Eye": 3
     }
   },
   "Pure Heart Gloves": {
     "tier": 13,
     "resources": {
-      "Fabric": 139,
+      "Essence": 5,
       "Ether": 40,
-      "Essence": 5
+      "Fabric": 139
     },
     "components": {
       "Astral Fabric": 3,
@@ -373,9 +373,9 @@
   "Pyroclastic Crown": {
     "tier": 15,
     "resources": {
+      "Essence": 11,
       "Fabric": 160,
-      "Jewels": 62,
-      "Essence": 11
+      "Jewels": 62
     },
     "components": {
       "Ancient Amber": 4,
@@ -385,21 +385,21 @@
   "Ring of Midas": {
     "tier": 15,
     "resources": {
+      "Ether": 63,
       "Iron": 493,
-      "Steel": 176,
-      "Ether": 63
+      "Steel": 176
     },
     "components": {
-      "Platinum Bangles": 5,
-      "Ancient Amber": 3
+      "Ancient Amber": 3,
+      "Platinum Bangles": 5
     }
   },
   "Rock Stompers": {
     "tier": 14,
     "resources": {
-      "Iron": 469,
+      "Essence": 9,
       "Ether": 58,
-      "Essence": 9
+      "Iron": 469
     },
     "components": {
       "Chunk of Boots": 1,
@@ -409,9 +409,9 @@
   "Sia's Royal Mantle": {
     "tier": 15,
     "resources": {
-      "Fabric": 188,
+      "Essence": 11,
       "Ether": 49,
-      "Essence": 11
+      "Fabric": 188
     },
     "components": {
       "Dinosaur Leather": 3,
@@ -421,9 +421,9 @@
   "Slathered Slippers": {
     "tier": 15,
     "resources": {
-      "Leather": 493,
+      "Essence": 12,
       "Fabric": 176,
-      "Essence": 12
+      "Leather": 493
     },
     "components": {
       "Dinosaur Leather": 4,
@@ -433,69 +433,69 @@
   "Teddy Bear Feet": {
     "tier": 15,
     "resources": {
-      "Leather": 480,
+      "Essence": 11,
       "Fabric": 170,
-      "Essence": 11
+      "Leather": 480
     },
     "components": {
-      "Marble Pillar": 4,
-      "Full Moon Crystal": 3
+      "Full Moon Crystal": 3,
+      "Marble Pillar": 4
     }
   },
   "Teddy Bear Head": {
     "tier": 15,
     "resources": {
-      "Leather": 480,
+      "Essence": 11,
       "Fabric": 170,
-      "Essence": 11
+      "Leather": 480
     },
     "components": {
-      "Elder Wood": 4,
-      "Ancient Amber": 2
+      "Ancient Amber": 2,
+      "Elder Wood": 4
     }
   },
   "Titan Admiral Arms": {
     "tier": 15,
     "resources": {
-      "Steel": 182,
+      "Essence": 11,
       "Ether": 66,
-      "Essence": 11
+      "Steel": 182
     },
     "components": {
-      "Man-goroots": 4,
-      "Divine Spark": 4
+      "Divine Spark": 4,
+      "Man-goroots": 4
     }
   },
   "Titan Admiral Boots": {
     "tier": 15,
     "resources": {
-      "Fabric": 165,
+      "Essence": 11,
       "Ether": 46,
-      "Essence": 11
+      "Fabric": 165
     },
     "components": {
-      "Marble Pillar": 3,
-      "Divine Spark": 4
+      "Divine Spark": 4,
+      "Marble Pillar": 3
     }
   },
   "Titan Admiral Gloves": {
     "tier": 15,
     "resources": {
-      "Leather": 485,
+      "Essence": 11,
       "Ether": 52,
-      "Essence": 11
+      "Leather": 485
     },
     "components": {
-      "Star Metal Ingot": 4,
-      "Divine Spark": 4
+      "Divine Spark": 4,
+      "Star Metal Ingot": 4
     }
   },
   "Titan Gauntlets": {
     "tier": 14,
     "resources": {
-      "Steel": 160,
+      "Essence": 9,
       "Jewels": 60,
-      "Essence": 9
+      "Steel": 160
     },
     "components": {
       "Demigod Pinion": 4,
@@ -505,9 +505,9 @@
   "Torc of Peace": {
     "tier": 14,
     "resources": {
-      "Iron": 352,
+      "Essence": 9,
       "Ether": 58,
-      "Essence": 9
+      "Iron": 352
     },
     "components": {
       "Broken Torc": 1,
@@ -517,20 +517,20 @@
   "Unbroken Signet": {
     "tier": 15,
     "resources": {
-      "Steel": 171,
+      "Essence": 11,
       "Ether": 62,
-      "Essence": 11
+      "Steel": 171
     },
     "components": {
-      "Mysterious Fossil": 3,
-      "Marble Pillar": 4
+      "Marble Pillar": 4,
+      "Mysterious Fossil": 3
     }
   },
   "Water Gun": {
     "tier": 16,
     "resources": {
-      "Iron": 550,
       "Ether": 65,
+      "Iron": 550,
       "Stardust": 13
     },
     "components": {
@@ -541,9 +541,9 @@
   "Wave Abbot Gi": {
     "tier": 14,
     "resources": {
+      "Essence": 6,
       "Fabric": 140,
-      "Jewels": 45,
-      "Essence": 6
+      "Jewels": 45
     },
     "components": {
       "Divine Spark": 4,
@@ -553,9 +553,9 @@
   "Xenotype Forelimbs": {
     "tier": 15,
     "resources": {
+      "Essence": 12,
       "Iron": 493,
-      "Steel": 176,
-      "Essence": 12
+      "Steel": 176
     },
     "components": {
       "Dinosaur Leather": 4,
@@ -570,8 +570,8 @@
       "Stardust": 13
     },
     "components": {
-      "Xzyur Claw": 3,
-      "Marble Pillar": 6
+      "Marble Pillar": 6,
+      "Xzyur Claw": 3
     }
   }
 }

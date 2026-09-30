@@ -40,6 +40,18 @@
     ]
   },
   {
+    "name": "Banana Royale",
+    "tier": 15,
+    "heroes": [
+      "Ninja",
+      "Samurai"
+    ],
+    "hero_labels": [
+      "Ninja / Sensei",
+      "Samurai / Daimyo"
+    ]
+  },
+  {
     "name": "BIT.Runner Armor",
     "tier": 15,
     "heroes": [
@@ -57,18 +69,6 @@
       "Ranger / Warden",
       "Samurai / Daimyo",
       "Soldier / Mercenary"
-    ]
-  },
-  {
-    "name": "Banana Royale",
-    "tier": 15,
-    "heroes": [
-      "Ninja",
-      "Samurai"
-    ],
-    "hero_labels": [
-      "Ninja / Sensei",
-      "Samurai / Daimyo"
     ]
   },
   {

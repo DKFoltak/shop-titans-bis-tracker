@@ -114,14 +114,18 @@ class GameCatalog:
         return ' / '.join(values)
 
     def snapshot(self) -> dict:
+        # Persist domain collections in a deterministic name order. Their
+        # source order is not semantically relevant and may change in the
+        # spreadsheet, which would otherwise create noisy JSON/Git diffs.
+        by_name = lambda value: value.casefold()
         return {
-            'resources': list(self.resources),
-            'quest_components': list(self.quest_components),
-            'fusion_components': list(self.fusion_components),
-            'components': list(self.components),
+            'resources': sorted(self.resources, key=by_name),
+            'quest_components': sorted(self.quest_components, key=by_name),
+            'fusion_components': sorted(self.fusion_components, key=by_name),
+            'components': sorted(self.components, key=by_name),
             'heroes': {
-                key: {'aliases': list(info.aliases)}
-                for key, info in sorted(self.heroes.items())
+                key: {'aliases': sorted(info.aliases, key=by_name)}
+                for key, info in sorted(self.heroes.items(), key=lambda item: by_name(item[0]))
             },
             'blueprint_count': len(self.blueprints),
             'sheets': self.sheet_names,

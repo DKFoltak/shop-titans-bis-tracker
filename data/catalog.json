@@ -1,169 +1,169 @@
 {
   "resources": [
-    "Iron",
-    "Wood",
-    "Leather",
-    "Herbs",
-    "Extra",
-    "Steel",
-    "Ironwood",
-    "Fabric",
-    "Oils",
-    "Jewels",
-    "Ether",
-    "Essence",
     "Dragon'S Hoard",
-    "Stardust"
+    "Essence",
+    "Ether",
+    "Extra",
+    "Fabric",
+    "Herbs",
+    "Iron",
+    "Ironwood",
+    "Jewels",
+    "Leather",
+    "Oils",
+    "Stardust",
+    "Steel",
+    "Wood"
   ],
   "quest_components": [
-    "Ghastly Pennant",
-    "Dinosaur Leather",
-    "Opulent Jewel",
-    "Rusted Tassets",
+    "Alien Bulb",
+    "All-Seeing Eye",
     "Ancient Amber",
     "Ancient Marble",
-    "Spooky Ectoplasm",
-    "All-Seeing Eye",
-    "Star Metal",
-    "Boreal Gale",
-    "Living Root",
-    "Xzyur Claw",
-    "Kingtoplasm",
-    "Silver Dust",
-    "Wing Nexus",
-    "Chronos Crystal",
-    "Precious Gem",
     "Astral Fabric",
-    "Rusted Pickaxe",
-    "Star Metal Ingot",
-    "Chunk of Boots",
-    "Golden Chunk",
-    "Deep Pearl",
-    "White Sand",
+    "Boreal Gale",
     "Broken Torc",
-    "Silk Scarab",
-    "Overgrown Vine",
-    "Heaven's Crest",
-    "Rusted Katana",
-    "Xzyur Eye",
-    "Outsider's Claw",
-    "Grim Talon",
-    "Deterioriated Book",
-    "Mysterious Fossil",
-    "Ruined Mace",
-    "Rusted Cannon",
-    "Precious Pearl",
-    "Precious Shell",
-    "Hybridized Vine",
-    "Platinum Bangles",
-    "Raw Obsidian",
-    "Zirconia Eggshell",
-    "Webbed Wing",
-    "Crush Claw",
-    "Faded Cowl",
     "Bronze Fang",
-    "Thread of Fate",
+    "Chronos Crystal",
+    "Chunk of Boots",
+    "Crush Claw",
+    "Crystal Lullaby",
     "Deep Coral",
+    "Deep Pearl",
+    "Demigod Pinion",
+    "Deterioriated Book",
+    "Dinosaur Leather",
+    "Divine Spark",
+    "Elder Wood",
+    "Elven Wood",
+    "Evil Eye",
+    "Faded Cowl",
+    "Full Moon Crystal",
+    "Ghastly Pennant",
+    "Glow Shroom",
+    "Golden Chunk",
+    "Grim Talon",
+    "Heaven's Crest",
+    "Hybridized Vine",
+    "Iron Pine Cone",
+    "Kingtoplasm",
+    "Living Root",
     "Magma Core",
     "Man-goroots",
-    "Paramount Gem",
-    "Spent Knowledge",
-    "Evil Eye",
-    "Iron Pine Cone",
-    "Rustwyrm Scale",
-    "Crystal Lullaby",
-    "Elven Wood",
-    "Elder Wood",
-    "Tattered Binder",
-    "Full Moon Crystal",
     "Marble Pillar",
-    "Glow Shroom",
-    "Demigod Pinion",
-    "Alien Bulb",
     "Moon Crystal",
-    "Divine Spark"
+    "Mysterious Fossil",
+    "Opulent Jewel",
+    "Outsider's Claw",
+    "Overgrown Vine",
+    "Paramount Gem",
+    "Platinum Bangles",
+    "Precious Gem",
+    "Precious Pearl",
+    "Precious Shell",
+    "Raw Obsidian",
+    "Ruined Mace",
+    "Rusted Cannon",
+    "Rusted Katana",
+    "Rusted Pickaxe",
+    "Rusted Tassets",
+    "Rustwyrm Scale",
+    "Silk Scarab",
+    "Silver Dust",
+    "Spent Knowledge",
+    "Spooky Ectoplasm",
+    "Star Metal",
+    "Star Metal Ingot",
+    "Tattered Binder",
+    "Thread of Fate",
+    "Webbed Wing",
+    "White Sand",
+    "Wing Nexus",
+    "Xzyur Claw",
+    "Xzyur Eye",
+    "Zirconia Eggshell"
   ],
   "fusion_components": [
-    "Sigil of True Grace",
     "Sigil of Grace",
+    "Sigil of Might",
     "Sigil of Spark",
-    "Sigil of True Spark",
+    "Sigil of True Grace",
     "Sigil of True Might",
-    "Sigil of Might"
+    "Sigil of True Spark"
   ],
   "components": [
-    "Ghastly Pennant",
-    "Dinosaur Leather",
-    "Opulent Jewel",
-    "Rusted Tassets",
+    "Alien Bulb",
+    "All-Seeing Eye",
     "Ancient Amber",
     "Ancient Marble",
-    "Spooky Ectoplasm",
-    "All-Seeing Eye",
-    "Star Metal",
-    "Boreal Gale",
-    "Living Root",
-    "Xzyur Claw",
-    "Kingtoplasm",
-    "Silver Dust",
-    "Wing Nexus",
-    "Chronos Crystal",
-    "Precious Gem",
     "Astral Fabric",
-    "Rusted Pickaxe",
-    "Star Metal Ingot",
-    "Chunk of Boots",
-    "Golden Chunk",
-    "Deep Pearl",
-    "White Sand",
+    "Boreal Gale",
     "Broken Torc",
-    "Silk Scarab",
-    "Overgrown Vine",
-    "Heaven's Crest",
-    "Rusted Katana",
-    "Xzyur Eye",
-    "Outsider's Claw",
-    "Grim Talon",
-    "Deterioriated Book",
-    "Mysterious Fossil",
-    "Ruined Mace",
-    "Rusted Cannon",
-    "Precious Pearl",
-    "Precious Shell",
-    "Hybridized Vine",
-    "Platinum Bangles",
-    "Raw Obsidian",
-    "Zirconia Eggshell",
-    "Webbed Wing",
-    "Crush Claw",
-    "Faded Cowl",
     "Bronze Fang",
-    "Thread of Fate",
+    "Chronos Crystal",
+    "Chunk of Boots",
+    "Crush Claw",
+    "Crystal Lullaby",
     "Deep Coral",
+    "Deep Pearl",
+    "Demigod Pinion",
+    "Deterioriated Book",
+    "Dinosaur Leather",
+    "Divine Spark",
+    "Elder Wood",
+    "Elven Wood",
+    "Evil Eye",
+    "Faded Cowl",
+    "Full Moon Crystal",
+    "Ghastly Pennant",
+    "Glow Shroom",
+    "Golden Chunk",
+    "Grim Talon",
+    "Heaven's Crest",
+    "Hybridized Vine",
+    "Iron Pine Cone",
+    "Kingtoplasm",
+    "Living Root",
     "Magma Core",
     "Man-goroots",
-    "Paramount Gem",
-    "Spent Knowledge",
-    "Evil Eye",
-    "Iron Pine Cone",
-    "Rustwyrm Scale",
-    "Crystal Lullaby",
-    "Elven Wood",
-    "Elder Wood",
-    "Tattered Binder",
-    "Full Moon Crystal",
     "Marble Pillar",
-    "Glow Shroom",
-    "Demigod Pinion",
-    "Alien Bulb",
     "Moon Crystal",
-    "Divine Spark",
-    "Sigil of True Grace",
+    "Mysterious Fossil",
+    "Opulent Jewel",
+    "Outsider's Claw",
+    "Overgrown Vine",
+    "Paramount Gem",
+    "Platinum Bangles",
+    "Precious Gem",
+    "Precious Pearl",
+    "Precious Shell",
+    "Raw Obsidian",
+    "Ruined Mace",
+    "Rusted Cannon",
+    "Rusted Katana",
+    "Rusted Pickaxe",
+    "Rusted Tassets",
+    "Rustwyrm Scale",
     "Sigil of Grace",
+    "Sigil of Might",
     "Sigil of Spark",
-    "Sigil of True Spark",
+    "Sigil of True Grace",
     "Sigil of True Might",
-    "Sigil of Might"
+    "Sigil of True Spark",
+    "Silk Scarab",
+    "Silver Dust",
+    "Spent Knowledge",
+    "Spooky Ectoplasm",
+    "Star Metal",
+    "Star Metal Ingot",
+    "Tattered Binder",
+    "Thread of Fate",
+    "Webbed Wing",
+    "White Sand",
+    "Wing Nexus",
+    "Xzyur Claw",
+    "Xzyur Eye",
+    "Zirconia Eggshell"
   ],
   "heroes": {
     "Barbarian": {
@@ -186,14 +186,14 @@
     },
     "Cleric": {
       "aliases": [
-        "Cleric",
-        "Bishop"
+        "Bishop",
+        "Cleric"
       ]
     },
     "Dancer": {
       "aliases": [
-        "Dancer",
-        "Acrobat"
+        "Acrobat",
+        "Dancer"
       ]
     },
     "Dark Knight": {
@@ -204,14 +204,14 @@
     },
     "Druid": {
       "aliases": [
-        "Druid",
-        "Arch Druid"
+        "Arch Druid",
+        "Druid"
       ]
     },
     "Geomancer": {
       "aliases": [
-        "Geomancer",
-        "Astramancer"
+        "Astramancer",
+        "Geomancer"
       ]
     },
     "Knight": {
@@ -222,20 +222,20 @@
     },
     "Mage": {
       "aliases": [
-        "Mage",
-        "Archmage"
+        "Archmage",
+        "Mage"
       ]
     },
     "Monk": {
       "aliases": [
-        "Monk",
-        "Grandmaster"
+        "Grandmaster",
+        "Monk"
       ]
     },
     "Musketeer": {
       "aliases": [
-        "Musketeer",
-        "Conquistador"
+        "Conquistador",
+        "Musketeer"
       ]
     },
     "Ninja": {
@@ -252,14 +252,14 @@
     },
     "Samurai": {
       "aliases": [
-        "Samurai",
-        "Daimyo"
+        "Daimyo",
+        "Samurai"
       ]
     },
     "Soldier": {
       "aliases": [
-        "Soldier",
-        "Mercenary"
+        "Mercenary",
+        "Soldier"
       ]
     },
     "Sorcerer": {
@@ -282,14 +282,14 @@
     },
     "Velite": {
       "aliases": [
-        "Velite",
-        "Praetorian"
+        "Praetorian",
+        "Velite"
       ]
     },
     "Wanderer": {
       "aliases": [
-        "Wanderer",
-        "Pathfinder"
+        "Pathfinder",
+        "Wanderer"
       ]
     }
   },

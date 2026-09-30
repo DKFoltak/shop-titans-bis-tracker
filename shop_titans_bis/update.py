@@ -62,11 +62,11 @@ def run(root: Path, offline: bool = False):
 
         bis = []
         recipes = {}
-        for name in sorted(item_heroes):
+        for name in sorted(item_heroes, key=str.casefold):
             bp = bp_by_name.get(name)
             if not bp:
                 raise RuntimeError(f'BiS sin blueprint oficial: {name}')
-            heroes = sorted(item_heroes[name])
+            heroes = sorted(item_heroes[name], key=str.casefold)
             bis.append({
                 'name': name,
                 'tier': bp.tier,
@@ -75,8 +75,8 @@ def run(root: Path, offline: bool = False):
             })
             recipes[name] = {
                 'tier': bp.tier,
-                'resources': bp.resources,
-                'components': bp.components,
+                'resources': dict(sorted(bp.resources.items(), key=lambda item: item[0].casefold())),
+                'components': dict(sorted(bp.components.items(), key=lambda item: item[0].casefold())),
             }
 
         unresolved = [
@@ -167,7 +167,7 @@ def run(root: Path, offline: bool = False):
         # seed.json is now exclusively for exceptional image information. Game
         # domain collections/labels are never persisted here as source of truth.
         seed.pop('hero_labels', None)
-        seed['image_slugs'] = slug_map
+        seed['image_slugs'] = dict(sorted(slug_map.items(), key=lambda item: item[0].casefold()))
         write_json(root / 'data/seed.json', seed)
 
     render_site(root, items, hero_labels, metadata)
